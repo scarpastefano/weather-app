@@ -9,20 +9,24 @@
 <body>
     <div class="container">
         <div class="child" id="meteo">
-            <span id="citta">...</span>
             <div>
                 <label>
-                  Inserisci città: 
-                  <input type="text" id="cityInput" placeholder="Es. Roma" />
+                    <input 
+                    style="color: black; border-radius: 20px; padding: 8px 10px; background-color: aliceblue; opacity: 0.2; width: 100%;"
+                    type="text" 
+                    id="cityInput" 
+                    placeholder="Es. Roma" 
+                    onkeydown="if (event.key === 'Enter') aggiornaMeteo()"
+                    />
                 </label>
-                <button onclick="aggiornaMeteo()">Mostra Meteo</button>
-              </div>
-            <ul>
-                <li>🌡️ Temperatura: <span id="temperatura">...</span> °C</li>
-                <li>💧 Umidità: <span id="umidita">...</span> %</li>
-                <li>🌧️ Precipitazioni: <span id="precipitazione">...</span> mm</li>
-                <li>🧭 Codice Meteo: <span id="weather-code">...</span></li>
-              </ul>
+                <!-- <button onclick="aggiornaMeteo()">Mostra Meteo</button> -->
+            </div>
+            
+            <span id="citta">...</span>    
+            <div><span class="temp" id="temperatura">...</span> °C</div>
+            <div>Umidità: <span id="umidita">...</span> %</div>
+            <div>Precipitazioni: <span id="precipitazione">...</span> mm</div>
+              
         </div>
     </div>
 </body>

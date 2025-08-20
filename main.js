@@ -36,7 +36,7 @@ async function aggiornaMeteo() {
 
     } catch (error) {
       console.error("Errore:", error);
-      alert("Si è verificato un errore nel recupero dei dati");
+      console.log("Si è verificato un errore nel recupero dei dati");
     }
   }
 
