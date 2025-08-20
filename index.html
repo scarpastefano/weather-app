@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="meteo">
+            <span id="citta">...</span>
+            <div>
+                <label>
+                  Inserisci città: 
+                  <input type="text" id="cityInput" placeholder="Es. Roma" />
+                </label>
+                <button onclick="aggiornaMeteo()">Mostra Meteo</button>
+              </div>
+            <ul>
+                <li>🌡️ Temperatura: <span id="temperatura">...</span> °C</li>
+                <li>💧 Umidità: <span id="umidita">...</span> %</li>
+                <li>🌧️ Precipitazioni: <span id="precipitazione">...</span> mm</li>
+                <li>🧭 Codice Meteo: <span id="weather-code">...</span></li>
+              </ul>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
